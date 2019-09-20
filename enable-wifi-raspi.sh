@@ -2,6 +2,8 @@
 usage()
 {
     echo "Usage: enable -s [SSID] -p [PASSWORD] -d [DRIVE LETTER]" >&2
+    echo "WARNING: Flash the Raspbian image before using this script!" >&2
+    echo "DRIVE LETTER should be the partition letter of the boot partition of the SD card" >&2 
     echo "Note: Drive letter should be in caps, for example if" >&2
     echo "USB is mounted in H:, use -d H" >&2
     exit 1
